@@ -15,3 +15,17 @@ const slides = [
         descrizione: 'Vaste distese di campi verdi che si estendono all\'orizzonte.'
     }
 ];
+
+const { createApp } = Vue;
+
+const opzioni = {
+    data() {
+        return {
+            titolo: 'Tramonto sulla spiaggia',
+            descrizione: 'Un meraviglioso tramonto con colori caldi che si riflettono sull\'acqua.',
+            pict: 'https://img.freepik.com/free-photo/sunset-time-tropical-beach-sea-with-coconut-palm-tree_74190-1075.jpg'
+        }
+    }
+}
+
+createApp(opzioni).mount('#app')
