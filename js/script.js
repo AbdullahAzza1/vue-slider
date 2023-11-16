@@ -21,9 +21,27 @@ const { createApp } = Vue;
 const opzioni = {
     data() {
         return {
-            titolo: 'Tramonto sulla spiaggia',
-            descrizione: 'Un meraviglioso tramonto con colori caldi che si riflettono sull\'acqua.',
-            pict: 'https://img.freepik.com/free-photo/sunset-time-tropical-beach-sea-with-coconut-palm-tree_74190-1075.jpg'
+            item: [
+                {
+                    titolo: 'Tramonto sulla spiaggia',
+                    descrizione: 'Un meraviglioso tramonto con colori caldi che si riflettono sull\'acqua.',
+                    pict: 'https://img.freepik.com/free-photo/sunset-time-tropical-beach-sea-with-coconut-palm-tree_74190-1075.jpg'
+                },
+                {
+                    titolo: 'Montagne innevate',
+                    descrizione: 'Un panorama mozzafiato delle montagne coperte di neve.',
+                    pict: 'https://img.freepik.com/free-photo/beautiful-shot-mountains-trees-covered-snow-fog_181624-17590.jpg'
+ 
+                }
+            ]
+        }
+    },
+    methods: {
+        back() {
+            this.slideNumber--;
+        },
+        next() {
+            this.slideNumber++;
         }
     }
 }
