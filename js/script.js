@@ -31,9 +31,14 @@ const opzioni = {
                     titolo: 'Montagne innevate',
                     descrizione: 'Un panorama mozzafiato delle montagne coperte di neve.',
                     pict: 'https://img.freepik.com/free-photo/beautiful-shot-mountains-trees-covered-snow-fog_181624-17590.jpg'
- 
+                },
+                {
+                    titolo: 'Campi verdi',
+                    descrizione: 'Vaste distese di campi verdi che si estendono all\'orizzonte.',
+                    pict: 'https://img.freepik.com/free-photo/countryside-field-sunny-day-countryside_181624-24010.jpg'
                 }
-            ]
+            ],
+            slideNumber: 0
         }
     },
     methods: {

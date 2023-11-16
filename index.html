@@ -11,13 +11,13 @@
 
 <body>
     <div id="app">
-        <div id="card">
+        <div id="card" v-bind="item[slideNumber]">
             <h2> {{titolo}} </h2>
             <p> {{descrizione}} </p>
             <img :src="pict" alt="">
         </div>
-
-        <img :src="slideNumber" alt="">
+        
+        
 
         <button @click="back">back</button>
         <button @click="next">next</button>
